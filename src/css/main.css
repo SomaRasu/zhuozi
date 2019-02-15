@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.zh-table {
+    border: 2px solid #A8DBC1;
+    display: table;
+    margin: 35px 35px 35px 35px;
+    width: calc(100% - 5em);
+}
+.zh-main-header {
+    display: table-caption;
+}
+.zh-header {
+    background-color: #eef8f3;
+    display: table-header-group;
+}
+.zh-header > .zh-row {
+    text-transform: capitalize;
+}
+.zh-row,
+.zh-data-row {
+    display: table-row;
+}
+.zh-cell {
+    display: table-cell;
+    padding: 21px;
+}
+.zh-data-row > .zh-cell {
+    border-bottom: 1px solid #A8DBC1;
+}
