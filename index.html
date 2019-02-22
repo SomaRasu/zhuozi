@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Zhuozi Data Table Component Demo</title>
 </head>
 <body>
@@ -11,43 +14,62 @@
         <h2>Hey there!</h2>
         <p>Thank you for checking out Zhouzi (pronounced '<i>CHO-zəh</i>')</p>
         <p>Zhouzi is a Vue data table component, utilizing Vuex</p>
+        <p>
+            With Zhouzi, I wanted to create a table component that doesn't use the actual <span class="md-code"> table </span>
+            element, but rather, take advantage of the native CSS2 <span class="md-code">display: table-*</span> layout mode.
+        </p>
     </section>
-    <div class="zh-table">
+    <div class="zh-table" id="app">
         <section class="zh-header">
             <div class="zh-row">
                 <div class="zh-cell">ID</div>
                 <div class="zh-cell">Name</div>
                 <div class="zh-cell">Description</div>
                 <div class="zh-cell">Amount paid</div>
+                <div class="zh-cell">Date paid</div>
             </div>
         </section>
         <!-- Render data rows based on Vue data -->
-        <section class="zh-data-row">
-            <div class="zh-cell">first row, first cell</div>
-            <div class="zh-cell">first row, second cell</div>
-            <div class="zh-cell">first row, third cell</div>
-            <div class="zh-cell">first row, fourth cell</div>
-        </section>
-        <section class="zh-data-row">
-            <div class="zh-cell">second row, first cell</div>
-            <div class="zh-cell">second row, second, cell</div>
-            <div class="zh-cell">second row, third cell</div>
-            <div class="zh-cell">second row, fourth cell</div>
-        </section>
-        <section class="zh-data-row">
-            <div class="zh-cell">third row, first cell</div>
-            <div class="zh-cell">third row, second cell</div>
-            <div class="zh-cell">third row, third cell</div>
-            <div class="zh-cell">third row, fourth cell</div>
-        </section>
-        <section class="zh-data-row">
-            <div class="zh-cell">fourth row, first cell</div>
-            <div class="zh-cell">fourth row, second cell</div>
-            <div class="zh-cell">fourth row, third cell</div>
-            <div class="zh-cell">fourth row, fourth cell</div>
-        </section>
+        <div class="zh-data-row-container">
+            <section class="zh-data-row">
+                <div class="zh-cell">first row, first cell</div>
+                <div class="zh-cell">first row, second cell</div>
+                <div class="zh-cell">first row, third cell</div>
+                <div class="zh-cell">first row, fourth cell</div>
+                <div class="zh-cell">first row, fifth cell</div>
+            </section>
+            <section class="zh-data-row">
+                <div class="zh-cell">second row, first cell</div>
+                <div class="zh-cell">second row, second, cell</div>
+                <div class="zh-cell">second row, third cell</div>
+                <div class="zh-cell">second row, fourth cell</div>
+                <div class="zh-cell">second row, fifth cell</div>
+            </section>
+            <section class="zh-data-row">
+                <div class="zh-cell">third row, first cell</div>
+                <div class="zh-cell">third row, second cell</div>
+                <div class="zh-cell">third row, third cell</div>
+                <div class="zh-cell">third row, fourth cell</div>
+                <div class="zh-cell">third row, fifth cell</div>
+            </section>
+            <section class="zh-data-row">
+                <div class="zh-cell">fourth row, first cell</div>
+                <div class="zh-cell">fourth row, second cell</div>
+                <div class="zh-cell">fourth row, third cell</div>
+                <div class="zh-cell">fourth row, fourth cell</div>
+                <div class="zh-cell">fourth row, fifth cell</div>
+            </section>
+            <section class="zh-data-row">
+                <div class="zh-cell">fifth row, first cell</div>
+                <div class="zh-cell">fifth row, second cell</div>
+                <div class="zh-cell">fifth row, third cell</div>
+                <div class="zh-cell">fifth row, fourth cell</div>
+                <div class="zh-cell">fifth row, fifth cell</div>
+            </section>
+        </div>
     </div>
 </section>
 </body>
-<script src="src/js/quiz.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.6/vue.min.js"></script>
+<script src="src/js/demo.js"></script>
 </html>
